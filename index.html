@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b6d1c08c2a.js" crossorigin="anonymous"></script>
     <link href="./styles/output.css" rel="stylesheet" />
     <title>Hockey's</title>
   </head>
-  <body>
-    <h1 class="text-7xl underline bg-red-300">Hello World</h1>
+  <body class="font-display">
+    <header class="container mx-auto">
+      <!-- navbar section -->
+      <div class="navbar bg-base-100 my-4">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-base font-normal leading-[22px] gap-2">
+              <li class="hover:text-red-500 duration-300 easy-in-out"><a>Home</a></li>
+              <li class="hover:text-red-500 duration-300 easy-in-out"><a>About</a></li>
+              <li class="hover:text-red-500 duration-300 easy-in-out"><a>Pages</a></li>
+              <li class="hover:text-red-500 duration-300 easy-in-out"><a>Blog</a></li>
+              <li class="hover:text-red-500 duration-300 easy-in-out"><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold leading-[50px]">Hocky<span class="text-red-600">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal gap-8 text-base font-normal leading-[22px]">
+            <li class="hover:text-red-500 duration-300 easy-in-out"><a>Home</a></li>
+            <li class="hover:text-red-500 duration-300 easy-in-out"><a>About</a></li>
+            <li class="hover:text-red-500 duration-300 easy-in-out"><a>Pages</a></li>
+            <li class="hover:text-red-500 duration-300 easy-in-out"><a>Blog</a></li>
+            <li class="hover:text-red-500 duration-300 easy-in-out"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-4 items-center">
+          <i class="fa-magnifying-glass fa-solid invisible lg:visible text-gray-400 cursor-pointer"></i>
+          <a class="btn btn-error text-white hover:ease-in-out">Get Ticket</a>
+        </div>
+      </div>
+
+      <!-- banner section -->
+      <div class="relative">
+        <div class="carousel lg:w-full rounded-lg h-50 lg:h-138">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex bottom-6 left-48 lg:left-6 space-x-4">
+              <a href="#slide4" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/2.png" class="w-full" />
+            <div class="absolute flex bottom-6 left-48 lg:left-6 space-x-4">
+              <a href="#slide1" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/3.png" class="w-full" />
+            <div class="absolute flex bottom-6 left-48 lg:left-6 space-x-4">
+              <a href="#slide2" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./Images/4.png" class="w-full" />
+            <div class="absolute flex bottom-6 left-48 lg:left-6 space-x-4">
+              <a href="#slide3" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle hover:bg-slate-600 bg-slate-900 text-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:absolute bottom-12 right-12 space-y-4 lg:w-2/5 bg-slate-900 p-8 text-white rounded-lg mt-4">
+          <p class="text-2xl font-extrabold leading-[33px]">Meet all the heroes from the field</p>
+          <p class="text-base font-medium text-white/60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
