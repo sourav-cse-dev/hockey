@@ -2,3 +2,5 @@
 .vscode/*
 .DS_Store
 .prettierrc.json
+
+/node_modules
