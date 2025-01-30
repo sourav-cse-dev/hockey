@@ -3,7 +3,4 @@
 @plugin "daisyui";
 @theme {
   --font-display: "Manrope", sans-serif;
-  --program-card {
-    background-image: linear-gradient(45deg, rgba);
-  }
 }
